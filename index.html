@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <p>This is a small webGL demo. Click the image to shock The Hattifatteners with a light!</p>
+  <script src='js/webGLUtils.js'></script>
+  <script src="js/material.js"></script>
+  <script src="js/math.js"></script>
+  <script src="shaders/vertex1.js"></script>
+  <script src="shaders/fragment1.js"></script>
+  <script src="shaders/hatShaders.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      window.game = new Game();
+      loop();
+    });
+  </script>
+</body>
+
+</html>
